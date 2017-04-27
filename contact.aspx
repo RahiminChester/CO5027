@@ -24,18 +24,21 @@
                   <td>Name:</td>
                   <td>
                       <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="enter your name" ForeColor="#0033CC" ControlToValidate="txtName"></asp:RequiredFieldValidator>
                   </td>
               </tr>
                 <tr>
                   <td>Email:</td>
                   <td>
                       <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="enter your email" ForeColor="#0033CC" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
                     </td>
               </tr>
                 <tr>
                   <td>Message:</td>
                   <td>
                       <asp:TextBox ID="txtMessage" runat="server" Height="107px" TextMode="MultiLine" Width="334px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="enter your email" ForeColor="#0033CC" ControlToValidate="txtMessage"></asp:RequiredFieldValidator>
                     </td>
               </tr>
               
