@@ -5,7 +5,7 @@
      <h1>Contact Us</h1>
 
 
-     <div class="map"><img src="images/map.png" alt="map" /></div>
+     <div class="map" id="map"></div>
             <div class="address">
                 <ul>
                     <li>Address: HV Power Tool London SE20 8TX, UK</li>
