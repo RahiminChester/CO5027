@@ -230,7 +230,9 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   padding: 66px 16px 0px 300px;}
   
 .form_settings
-{ margin: 15px 0 0 0;}
+{ margin: 55px 0 0 0;
+
+}
 
 .form_settings p
 { padding: 0 0 4px 0;}
@@ -317,47 +319,42 @@ padding:10px;
     
     }
 
-#locator {
-    position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 800px;
-  height: 500px;
-  background-color:white;
-  padding:10px;
-  z-index:9999;
-  box-shadow: 5px 5px 5px gray;
-}
 
-#locator .map {
-   
-    
-    
-   
-   
+.map {
+  
      background-size:cover;
 }
-#locator .address {
+.address {
    
     padding:10px;  
 }
 
-#locator .address ul  {
-    list-style:none;
+.address ul  {
+   
     font-size:1.2em;
 }
 
-#locator .address ul li  {
+.address ul li  {
     margin:10px;
+     list-style:none;
+     text-align:center;
+     background:#777;
+     color:#ffffff;
+     padding:10px;
 }
 
-    #locator .map img {
+   .map img {
     width:60%;
     height:60%;
     display:block;
     margin-left:auto;
     margin-right:auto;
     }
+.contactform {
+background-color:#FFF;
+padding:20px;
+}
+    .contactform table tr td{
+   background-color:#FFF;
+        
+         }

@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" MasterPageFile="~/MasterPage.master" %>
 
 <asp:Content ID="index" ContentPlaceHolderID="maincontents"  runat="server">
-   <p id="top"></p>
+    <p id="top"></p>
           <div class="sidebar">
         <!-- insert your sidebar items here -->
        

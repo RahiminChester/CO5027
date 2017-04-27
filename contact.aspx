@@ -1,29 +1,53 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="contact" MasterPageFile="~/MasterPage.master"%>
 
 <asp:Content ID="contactpage" ContentPlaceHolderID="maincontents" runat="server">
+     <form id="form1" runat="server">
      <h1>Contact Us</h1>
-        <p>Below is an example of how a contact form might look with this template:</p>
-        <form action="#" method="post">
-          <div class="form_settings">
-            <p><span>Name</span><input class="contact" type="text" name="your_name" value="" /></p>
-            <p><span>Email Address</span><input class="contact" type="text" name="your_email" value="" /></p>
-            <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
-            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="submit" /></p>
-          </div>
-        </form>
-    <h4 id="viewmap" style="cursor:pointer;text-align:left;padding:5px;border:1px solid #0094ff;width:100px">Locate us</h4>
-        <div id="locator">
-             <p id="close" style="text-align:right; cursor:pointer">Close window</p>
-            <div class="map"><img src="images/map.png" alt="map" /></div>
+
+
+     <div class="map"><img src="images/map.png" alt="map" /></div>
             <div class="address">
                 <ul>
-                    <li>Address:</li>
-                    <li>Phone:</li>
-                    <li>Fax:</li>
-                    <li>Email:</li>
+                    <li>Address: HV Power Tool London SE20 8TX, UK</li>
+                    <li>Phone:+44 7911 123456</li>
+                    <li>Fax:+44 7911 123458</li>
+                    <li>Email:hvtools.bn@gmail.com</li>
                 </ul>
 
-            </div>
 
         </div>
+       <div class="contactform">
+      <h3>Send us your feedback</h3>
+   
+          <table>
+              <tr>
+                  <td>Name:</td>
+                  <td>
+                      <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                  </td>
+              </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td>
+                      <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
+                    </td>
+              </tr>
+                <tr>
+                  <td>Message:</td>
+                  <td>
+                      <asp:TextBox ID="txtMessage" runat="server" Height="107px" TextMode="MultiLine" Width="334px"></asp:TextBox>
+                    </td>
+              </tr>
+              
+          </table>
+    
+   <asp:Button ID="Submit" runat="server" Text="Submit" OnClick="Submit_Click" />
+</div>   
+    
+            
+           
+     </form>
+    
+            
+           
 </asp:Content>
