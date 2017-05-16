@@ -556,6 +556,27 @@ padding:20px;
 }
 
 
+#summary #total {
+    
+}
+
+#summary #cart {
+   
+}
+#paypal{
+    clear:none;
+}
+#paypal img{
+   float:right; 
+}
+#paypal table{
+   width:300px;
+   float:left;
+}
+#paypal table td {
+    background-color:#FFF;
+}
+
 #products img {
     width:50px;
     height:50px;
@@ -574,6 +595,15 @@ padding:20px;
 #products ul li {
    margin:0;
    padding:0;
+}
+
+.totalprice {
+    font-size:1.2em;
+    color:red;
+}
+
+#summary table tr td {
+    background-color:#FFF;
 }
 
 
