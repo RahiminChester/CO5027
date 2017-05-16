@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" MasterPageFile="~/MasterPage.master" %>
 
 <asp:Content ID="index" ContentPlaceHolderID="maincontents"  runat="server">
+    <form id="form1" runat="server">
     <p id="top"></p>
           <div class="sidebar">
         <!-- insert your sidebar items here -->
@@ -25,116 +26,159 @@
       <hr />
       <div id="producttools">
            <div id="drills">
-               <h2>Drills</h2>
-               <table style="width: 100%;">
-                   <tr>
-                       <td><img src="products/drills/angle1.jpg"></td>
-                       <td><img src="products/drills/impact1.jpg" /></td>
-                       <td><img src="products/drills/hammer1.jpg" /></td>
-                   </tr>
-                   <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
-                   <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
+               <h2>Drills
+               </h2>
 
-                      <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
-               </table>
+          
 
+
+                   <asp:Repeater ID="Repeater1" runat="server" DataSourceID="source1">
+                <HeaderTemplate>
+                    <ul>
+                </HeaderTemplate>
+
+                   <ItemTemplate>
+                       <li>
+                           <ul>
+                               <li><h3><%# Eval("toolname") %></h3></li>
+                                  <li><img src='<%# Eval("imageurl") %>' alt="tool" /></li>
+                                  <li><h3>Brand:(<%# Eval("toolbrand") %>)</h3></li>
+                                  <li><em><strong><h4>Price:(<%# Eval("toolprice") %>)</h4></strong></em></li>
+                           </ul>
+
+
+                       </li>
+
+                   
+                       </ItemTemplate>
+                       <FooterTemplate>
+                           </ul>
+                       </FooterTemplate>
+                     </asp:Repeater>
+              
+               <hr />
                <a href="#top">Top</a>
 
            </div>
         <div id="grinders">
               <h2>Grinders</h2>
-              <table style="width: 100%;">
-                   <tr>
-                       <td><img src="products/grinders/grinder1.jpg"></td>
-                       <td><img src="products/grinders/grinder2.jpg" /></td>
-                       <td><img src="products/grinders/grinder3.jpg" /></td>
-                   </tr>
-                   <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
-                   <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
+            
+                   <asp:Repeater ID="Repeater2" runat="server" DataSourceID="source2">
+                <HeaderTemplate>
+                    <ul>
+                </HeaderTemplate>
 
-                      <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
-               </table>
-             <a href="#top">Top</a>
+                   <ItemTemplate>
+                       <li>
+                           <ul>
+                               <li><h3><%# Eval("toolname") %></h3></li>
+                                  <li><img src='<%# Eval("imageurl") %>' alt="tool" /></li>
+                                  <li><h3>Brand:(<%# Eval("toolbrand") %>)</h3></li>
+                                  <li><em><strong><h4>Price:(<%# Eval("toolprice") %>)</h4></strong></em></li>
+                           </ul>
+
+
+                       </li>
+
+                   
+                       </ItemTemplate>
+                       <FooterTemplate>
+                           </ul>
+                       </FooterTemplate>
+                     </asp:Repeater>
+              
+               <hr />
+               <a href="#top">Top</a>
         </div>
         <div id="sanders">
               <h2>Sanders</h2>
-             <table style="width: 100%;">
-                   <tr>
-                       <td><img src="products/sanders/sander1.jpg"></td>
-                       <td><img src="products/sanders/sander2.jpg"></td>
-                        <td><img src="products/sanders/sander3.jpg"></td>
-                   </tr>
-                   <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
-                   <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
+           
+                   <asp:Repeater ID="Repeater3" runat="server" DataSourceID="source3">
+                <HeaderTemplate>
+                    <ul>
+                </HeaderTemplate>
 
-                      <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
-               </table>
-             <a href="#top">Top</a>
+                   <ItemTemplate>
+                       <li>
+                           <ul>
+                               <li><h3><%# Eval("toolname") %></h3></li>
+                                  <li><img src='<%# Eval("imageurl") %>' alt="tool" /></li>
+                                  <li><h3>Brand:(<%# Eval("toolbrand") %>)</h3></li>
+                                  <li><em><strong><h4>Price:(<%# Eval("toolprice") %>)</h4></strong></em></li>
+                           </ul>
+
+
+                       </li>
+
+                   
+                       </ItemTemplate>
+                       <FooterTemplate>
+                           </ul>
+                       </FooterTemplate>
+                     </asp:Repeater>
+              
+               <hr />
+               <a href="#top">Top</a>
         </div>
        
         <div id="woodwork">
               <h2>Woodwork</h2>
-               <table style="width: 100%;">
-                   <tr>
-                       <td><img src="products/woodworks/saw1.jpg"></td>
-                      <td><img src="products/woodworks/saw2.jpg">
+             
+          
+                   <asp:Repeater ID="Repeater4" runat="server" DataSourceID="source4">
+                <HeaderTemplate>
+                    <ul>
+                </HeaderTemplate>
 
-                      </td><td><img src="products/woodworks/saw3.jpg"></td>
-                   </tr>
-                   <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
-                   <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
+                   <ItemTemplate>
+                       <li>
+                           <ul>
+                               <li><h3><%# Eval("toolname") %></h3></li>
+                                  <li><img src='<%# Eval("imageurl") %>' alt="tool" /></li>
+                                  <li><h3>Brand:(<%# Eval("toolbrand") %>)</h3></li>
+                                  <li><em><strong><h4>Price:(<%# Eval("toolprice") %>)</h4></strong></em></li>
+                           </ul>
 
-                      <tr>
-                       <td>Name:</td>
-                       <td>Description:</td>
-                       <td>Price:</td>
-                   </tr>
-               </table>
-             <a href="#top">Top</a>
+
+                       </li>
+
+                   
+                       </ItemTemplate>
+                       <FooterTemplate>
+                           </ul>
+                       </FooterTemplate>
+                     </asp:Repeater>
+              
+               <hr />
+               <a href="#top">Top</a>
         </div>
     </div>
+    </form>
+
+
+    <asp:SqlDataSource ID="source1" runat="server" ConnectionString="<%$ ConnectionStrings:hvtools %>" SelectCommand="SELECT top 3 [toolname], [toolbrand], [toolmodel], [imageurl],[toolprice] FROM [tblTools] WHERE ([toolcategory] = @toolcategory)">
+                       <SelectParameters>
+                           <asp:Parameter DefaultValue="Drills" Name="toolcategory" Type="String" />
+                       </SelectParameters>
+                   </asp:SqlDataSource>
+
+
+     <asp:SqlDataSource ID="source2" runat="server" ConnectionString="<%$ ConnectionStrings:hvtools %>" SelectCommand="SELECT top 3 [toolname], [toolbrand], [toolmodel], [imageurl],[toolprice] FROM [tblTools] WHERE ([toolcategory] = @toolcategory)">
+                       <SelectParameters>
+                           <asp:Parameter DefaultValue="Grinders" Name="toolcategory" Type="String" />
+                       </SelectParameters>
+                   </asp:SqlDataSource>
+
+     <asp:SqlDataSource ID="source3" runat="server" ConnectionString="<%$ ConnectionStrings:hvtools %>" SelectCommand="SELECT top 3 [toolname], [toolbrand], [toolmodel], [imageurl],[toolprice] FROM [tblTools] WHERE ([toolcategory] = @toolcategory)">
+                       <SelectParameters>
+                           <asp:Parameter DefaultValue="Sanders" Name="toolcategory" Type="String" />
+                       </SelectParameters>
+                   </asp:SqlDataSource>
+
+
+     <asp:SqlDataSource ID="source4" runat="server" ConnectionString="<%$ ConnectionStrings:hvtools %>" SelectCommand="SELECT top 3 [toolname], [toolbrand], [toolmodel], [imageurl],[toolprice] FROM [tblTools] WHERE ([toolcategory] = @toolcategory)">
+                       <SelectParameters>
+                           <asp:Parameter DefaultValue="Woodwork" Name="toolcategory" Type="String" />
+                       </SelectParameters>
+                   </asp:SqlDataSource>
 </asp:Content>

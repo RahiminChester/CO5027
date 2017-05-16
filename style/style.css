@@ -297,9 +297,10 @@ table tr td
   border-top: 1px solid #FFF;}
 
 #producttools div {
-height:400px;
+height:auto;
 border-bottom:solid 1px #47433F;
 padding:10px;
+text-align:center;
 }
 
     #producttools div a {
@@ -308,17 +309,7 @@ padding:10px;
     text-align:right;
     }
 
-    #producttools div img {
-    width:150px;
-    height:150px;
-    border-radius:10px;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    box-shadow:2px 2px 2px #47433F;
-    
-    }
-
+   
 
 .map {
   
@@ -362,3 +353,103 @@ padding:20px;
    background-color:#FFF;
         
          }
+
+    #forms table td{
+        background-color:#FFF;
+    }
+    #forms table td span{
+        text-align:center;
+        width:100px;
+    }
+
+     #forms table td input[type=submit]{
+       padding:2px;
+       width:100px;
+    }
+    #forms table input[type=text],#forms table input[type=number],#forms table select,#forms table textarea,#forms table input[type=file]{
+        background-color:#47433F;
+        color:white;
+        padding:5px;
+        width:250px;
+        border:1px solid #1293EE;
+    }
+
+
+    /*tools listing*/
+#producttools ul {
+        list-style:none;
+        display:inline;
+        margin:1px;
+        padding:1px;
+        text-align:center;
+        width:100%;
+     
+
+       
+}
+
+#producttools ul li {
+     display:inline-block;
+     list-style:none;
+    
+}
+#producttools ul li ul {
+        list-style:none;
+        display:list-item;
+        width:200px;
+        border:1px solid #282828;
+}
+#producttools ul li ul li img {
+    width:150px;
+    height:150px;
+}
+#producttools ul li ul li {
+    display:list-item;
+    text-align:center;
+    font-size:.8em;
+}
+
+#producttools ul li:hover span{
+    display:list-item;
+    text-align:center;
+    font-size:.8em;
+}
+#producttools ul li span {
+    display:none;
+    padding:5px;
+    background-color:#ff0000;
+    width:100px;
+    border-radius:5px;
+    color:white;
+    text-align:center;
+    position:absolute;
+    margin-top:-100px;
+    margin-left:50px;
+    box-shadow:2px 2px #0e0d0d;
+}
+#producttools ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+#producttools ul li ul:hover{
+    background-color:#000;
+ 
+  
+    
+}
+
+#producttools ul li ul:hover > h4{
+    color:#000;
+    font-size:20em;
+ 
+  
+    
+}
+
+
+#producttools ul li ul img {
+      opacity:.8;
+        box-shadow:gray 10px 5px 2px;
+        border-radius:10px;
+}
