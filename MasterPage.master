@@ -18,8 +18,9 @@
     <script>
         $(document).ready(function () {
             $("#locator").css("display", "none");
-           
-          
+            $("#history").css("display", "none");
+            $("#cart").css("display", "none");
+            $("#accounts").css("display", "none");
 
             $("#viewmap").click(function () {
                 $("#locator").slideDown();
@@ -34,6 +35,39 @@
 
             });
 
+            $("#clink").click(function() {
+                $("#cart").slideToggle();
+                $("#history").css("display", "none");
+                $("#products").css("display", "none");
+                $("#accounts").css("display", "none");
+
+
+            });
+
+            $("#hlink").click(function () {
+                $("#history").slideToggle();
+                $("#products").css("display", "none");
+                $("#cart").css("display", "none");
+                $("#accounts").css("display", "none");
+
+
+            });
+
+            $("#plink").click(function () {
+                $("#products").slideToggle();
+                $("#history").css("display", "none");
+                $("#cart").css("display", "none");
+                $("#accounts").css("display", "none");
+
+            });
+
+            $("#alink").click(function () {
+                $("#accounts").slideToggle();
+                $("#history").css("display", "none");
+                $("#cart").css("display", "none");
+                $("#products").css("display", "none");
+            });
+
 
         });
     </script>
@@ -46,7 +80,7 @@
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="index.html">HV <span class="logo_colour">Tools</span></a></h1>
-          <h2>Simple. Contemporary. Website Template.</h2>
+          <h2>If its tool go need, We got it</h2>
         </div>
       </div>
       <div id="menubar">
